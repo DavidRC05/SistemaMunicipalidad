@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fortaleza - Municipalidad de Tibás</title>
+    <link rel="stylesheet" href="../../CSS/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="../../index.html">
+        <img
+          src="../../assets/images/Screenshot 2023-12-11 at 22.06.48.png"
+          width="150px"
+          style="margin-left: 30px;"
+        />
+      </a>
+      <div></div>
+      <input type="text" placeholder="Buscar..." />
+      <div>
+        <button type="button" onclick="window.location.href='../Registro/inicioSesion.html'">Iniciar Sesión</button>
+        <button type="button" onclick="window.location.href='../Registro/registro.html'">Registrarse</button>
+      </div>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li><a href="./equipos.html">Equipos</a></li>
+        <li><a href="./marcas.html">Marcas</a></li>
+        <li><a href="./proveedores.html">Proveedores</a></li>
+        <li><a href="./licencias.html">Licencias</a></li>
+        <li><a href="./departamentos.html">Departamentos</a></li>
+        <li><a href="./areas.html">Áreas</a></li>
+        <li><a href="./historial.html">Historial</a></li>
+        <li><a href="./notificaciones.html">Notificaciones</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="content-header">
+        <h1>Tabla de Licencias</h1>
+        <button type="button" onclick="">Agregar Nuevo</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>id_licencias</th>
+            <th>windows</th>
+            <th>office</th>
+            <th>opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Si</td>
+            <td>No</td>
+            <td>
+              <!-- Aquí puedes añadir botones o enlaces para opciones como editar o eliminar -->
+              <button type="button">Editar</button>
+              <button type="button">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>

@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login - Municipalidad de Tibás</title>
+    <link rel="stylesheet" href="../../CSS/registro.css">
 </head>
 <body>
-    
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" placeholder="Usuario" name="username" required>
+            <input type="password" placeholder="Contraseña" name="password" required>
+            <button type="button" class="cancel-button" onclick="window.location.href='../../index.html'" >Cancelar</button>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
 </body>
 </html>

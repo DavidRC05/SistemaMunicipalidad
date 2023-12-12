@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Municipalidad Tibas</title>
-    <link href="./CSS/style.css" rel="stylesheet" />
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard de Inventario - Municipalidad de Tibás</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./index.html">
+        <img
+          src="./assets/images/Screenshot 2023-12-11 at 22.06.48.png"
+          width="150px"
+          style="margin-left: 30px;"
+        />
+      </a>
+      <div></div>
+      <input type="text" placeholder="Buscar..." />
+      <div>
+        <button type="button" onclick="window.location.href='./public/Registro/inicioSesion.html'">Iniciar Sesión</button>
+        <button type="button" onclick="window.location.href='./public/Registro/registro.html'">Registrarse</button>
+      </div>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li><a href="./public/Sidebar/equipos.html">Equipos</a></li>
+        <li><a href="./public/Sidebar/marcas.html">Marcas</a></li>
+        <li><a href="./public/Sidebar/proveedores.html">Proveedores</a></li>
+        <li><a href="./public/Sidebar/licencias.html">Licencias</a></li>
+        <li><a href="./public/Sidebar/departamentos.html">Departamentos</a></li>
+        <li><a href="./public/Sidebar/areas.html">Áreas</a></li>
+        <li><a href="./public/Sidebar/historial.html">Historial</a></li>
+        <li><a href="./public/Sidebar/notificaciones.html">Notificaciones</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="content-header">
+        <h1>Tabla de Equipos</h1>
+        <button type="button" onclick="">Agregar Nuevo</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>id_equipo</th>
+            <th>marca</th>
+            <th>ram</th>
+            <th>procesador</th>
+            <th>fecha_ingreso</th>
+            <th>opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Samsung</td>
+            <td>8GB</td>
+            <td>Intel i7</td>
+            <td>01/01/2023</td>
+            <td>
+              <!-- Aquí puedes añadir botones o enlaces para opciones como editar o eliminar -->
+              <button type="button">Editar</button>
+              <button type="button">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Lenovo</td>
+            <td>16GB</td>
+            <td>AMD Ryzen 5</td>
+            <td>15/02/2023</td>
+            <td>
+              <button>Editar</button>
+              <button>Eliminar</button>
+            </td>
+          </tr>
+          <!-- Añade más filas según sea necesario -->
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>

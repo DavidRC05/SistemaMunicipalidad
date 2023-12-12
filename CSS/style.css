@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-top: 60px; /* Agrega espacio en la parte superior */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #004d40;
+    color: white;
+    height: calc(100vh - 60px); /* Altura ajustada */
+    padding: 20px;
+    position: fixed; /* Hace que el sidebar quede fijo */
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #00796b;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 220px; /* Asegúrate de mantener este margen para el sidebar */
+    padding-top: 0; /* Elimina el padding superior */
+    padding-right: 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #004d40;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #009688;
+}
+
+.sidebar ul li:hover {
+    background-color: #00796b;
+    cursor: pointer;
+}
+
+.sidebar ul li a:hover {
+    color: #B2DFDB;
+}
+
+.navbar {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 50px; /* Altura fija para el navbar */
+}
+
+.navbar > div {
+    flex: 1; /* Permite que los divs ocupen espacio para alinear los elementos */
+}
+
+
+.navbar input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    flex-grow: 2; /* Permite que el input crezca y ocupe más espacio */
+}
+
+.navbar button {
+    padding: 5px 10px;
+    color: white;
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #009688;
+}
+
+.content-header {
+    background-color: #00352c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Elimina cualquier margen */
+    padding: 10px 20px; /* Ajusta el padding según necesites */
+    width: calc(100% - 40px); /* Ajusta el ancho considerando el padding */
+}
+
+.content-header h1 {
+    margin: 10px; /* Ajusta según necesidad */
+    color: white;
+}
+.content button {
+    padding: 5px 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-header button {
+    padding: 5px 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-header button:hover {
+    background-color: #009688;
+}
+
